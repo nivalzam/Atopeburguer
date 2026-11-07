@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>A Tope Burguer — Burgers in California, afternoons &amp; nights</title>
+  <meta name="description" content="Made-to-order burgers in California. Get delivery on DoorDash or Uber Eats, or come grab it. Open afternoons and nights.">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A Tope Burguer">
+  <meta property="og:description" content="Burgers at full throttle · Hamburguesas a tope. California, afternoons &amp; nights.">
+  <meta property="og:image" content="img/logo-720.jpg">
+  <link rel="icon" href="img/logo-96.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="img/logo-360.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.className = "js";</script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#top" data-i18n-attr="aria-label:logo.home" aria-label="A Tope Burguer, go to top">
+        <img src="img/logo-96.jpg" srcset="img/logo-96.jpg 96w, img/logo-360.jpg 360w" sizes="56px" width="96" height="81" alt="">
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+        <ul>
+          <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+          <li><a href="#location" data-i18n="nav.location">Location</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="status-pill" data-status-short hidden>
+        <span class="dot" aria-hidden="true"></span><span class="status-text"></span>
+      </p>
+
+      <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.label">
+        <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="es" lang="es" aria-pressed="false">ES</button>
+      </div>
+
+      <a class="btn btn-small header-order" href="#order" data-i18n="nav.order">Order</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+              aria-label="Open or close the menu" data-i18n-attr="aria-label:nav.toggle">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path class="bar bar-1" d="M4 7h16"/><path class="bar bar-2" d="M4 12h16"/><path class="bar bar-3" d="M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- Hero: línea de salida -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-inner wrap">
+        <div class="hero-mark">
+          <img class="hero-logo"
+               src="img/logo-720.jpg"
+               srcset="img/logo-360.jpg 360w, img/logo-720.jpg 720w, img/logo.jpg 1366w"
+               sizes="(min-width: 60rem) 38vw, 72vw"
+               width="1366" height="1151"
+               alt="A Tope Burguer" data-i18n-attr="alt:logo.alt"
+               fetchpriority="high" decoding="async">
+        </div>
+
+        <div class="hero-copy">
+          <h1 id="hero-title" class="display" data-i18n="hero.title">Burgers at full throttle.</h1>
+          <p class="lede" data-i18n="hero.sub">Made to order for the afternoon, the night shift and the late-night craving. Get it delivered or come grab it.</p>
+
+          <p class="status" data-status data-state="unknown">
+            <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="status-text">Hours coming soon</span>
+          </p>
+        </div>
+
+        <ul class="lanes" id="order" aria-label="Two ways to order" data-i18n-attr="aria-label:lanes.label">
+          <li class="lane">
+            <span class="lane-num" aria-hidden="true">1</span>
+            <h2 class="lane-title" data-i18n="lane.deliver.title">Get it delivered</h2>
+            <p class="lane-text" data-i18n="lane.deliver.text">Straight to your door with DoorDash or Uber Eats.</p>
+            <div class="lane-actions">
+              <a class="btn" data-link="doordash">DoorDash <span class="btn-note"></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="btn" data-link="ubereats">Uber Eats <span class="btn-note"></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </li>
+          <li class="lane">
+            <span class="lane-num" aria-hidden="true">2</span>
+            <h2 class="lane-title" data-i18n="lane.visit.title">Come grab it</h2>
+            <p class="lane-text" data-today>Hours coming soon.</p>
+            <div class="lane-actions">
+              <a class="btn" data-link="maps"><span data-i18n="btn.directions">Get directions</span> <span class="btn-note"></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="section benefits" aria-labelledby="benefits-title">
+      <div class="wrap">
+        <h2 id="benefits-title" class="section-title" data-i18n="benefits.title">Why A Tope</h2>
+        <ul class="benefit-list">
+          <li class="benefit">
+            <h3 data-i18n="b1.title">Open when hunger hits</h3>
+            <p data-i18n="b1.text">Afternoon into night, when the day's finally done and you're starving.</p>
+          </li>
+          <li class="benefit">
+            <h3 data-i18n="b2.title">From the grill to your door</h3>
+            <p data-i18n="b2.text">Order on DoorDash or Uber Eats from home, work or the library.</p>
+          </li>
+          <li class="benefit">
+            <h3 data-i18n="b3.title">Feeds the whole crew</h3>
+            <p data-i18n="b3.text">Family, classmates or the night-shift team: there's enough for everyone.</p>
+          </li>
+          <li class="benefit">
+            <h3 data-i18n="b4.title">We speak your language</h3>
+            <p data-i18n="b4.text">Service in English and Spanish, whichever you like.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Menú destacado -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <h2 id="menu-title" class="section-title" data-i18n="menu.title">On the grill</h2>
+        <ul class="menu-list" data-menu hidden></ul>
+        <div class="menu-empty" data-menu-empty>
+          <p class="lede" data-i18n="menu.empty">The full menu is coming soon. Meanwhile, check it out on DoorDash or Uber Eats.</p>
+          <div class="actions">
+            <a class="btn btn-ghost" data-link="doordash">DoorDash <span class="btn-note"></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" data-link="ubereats">Uber Eats <span class="btn-note"></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prueba social honesta -->
+    <section class="section proof" aria-labelledby="proof-title">
+      <div class="wrap">
+        <h2 id="proof-title" class="section-title proof-title" data-proof-title>Reviews are earned on the track.</h2>
+        <ul class="reviews" data-reviews hidden></ul>
+        <div data-proof-honest>
+          <p class="lede" data-i18n="proof.text">We won't make up reviews. Try it and tell the world.</p>
+        </div>
+        <ul class="facts" aria-label="A Tope facts" data-i18n-attr="aria-label:proof.factsLabel">
+          <li data-i18n="proof.fact1">Order on DoorDash</li>
+          <li data-i18n="proof.fact2">Order on Uber Eats</li>
+          <li data-i18n="proof.fact3">Open afternoons &amp; nights</li>
+          <li data-i18n="proof.fact4">Made in California</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-ghost" data-link="googleReview" data-needs="googleReview" hidden><span data-i18n="proof.review">Leave us a Google review</span> <span class="btn-note"></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <ul class="social" data-social data-social-wrap hidden aria-label="Social media" data-i18n-attr="aria-label:social.label"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicación y horario -->
+    <section class="section location" id="location" aria-labelledby="location-title">
+      <div class="wrap location-grid">
+        <div class="location-info">
+          <h2 id="location-title" class="section-title" data-i18n="loc.title">Find us</h2>
+          <address>
+            <span class="label" data-i18n="loc.addressLabel">Address</span>
+            <span class="address" data-address>Address coming soon.</span>
+            <span class="phone" data-phone hidden><span class="label" data-i18n="loc.phoneLabel">Phone</span> <a></a></span>
+          </address>
+          <div class="actions">
+            <a class="btn" data-link="maps"><span data-i18n="btn.directions">Get directions</span> <span class="btn-note"></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <h3 class="hours-title" data-i18n="loc.hoursTitle">Hours</h3>
+          <div data-hours><p class="muted">Hours coming soon.</p></div>
+        </div>
+
+        <div class="map" data-map>
+          <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <button type="button" class="btn btn-ghost map-load" data-i18n="loc.loadMap" hidden>Load map</button>
+          <p class="map-note muted" data-i18n="loc.mapNote" hidden>Loading the map shares data about your visit with Google.</p>
+          <p class="map-pending muted" data-i18n="loc.mapPending">The map will show up once we have the address.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final: bandera a cuadros -->
+    <section class="finish" aria-labelledby="cta-title">
+      <div class="checker" aria-hidden="true"></div>
+      <div class="finish-inner wrap">
+        <h2 id="cta-title" class="display finish-title" data-i18n="cta.title">Hungry yet? Let's roll.</h2>
+        <p class="status" data-status data-state="unknown">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="status-text">Hours coming soon</span>
+        </p>
+        <ul class="lanes lanes-compact">
+          <li class="lane">
+            <span class="lane-num" aria-hidden="true">1</span>
+            <h3 class="lane-title" data-i18n="lane.deliver.title">Get it delivered</h3>
+            <div class="lane-actions">
+              <a class="btn" data-link="doordash">DoorDash <span class="btn-note"></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="btn" data-link="ubereats">Uber Eats <span class="btn-note"></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </li>
+          <li class="lane">
+            <span class="lane-num" aria-hidden="true">2</span>
+            <h3 class="lane-title" data-i18n="lane.visit.title">Come grab it</h3>
+            <div class="lane-actions">
+              <a class="btn" data-link="maps"><span data-i18n="btn.directions">Get directions</span> <span class="btn-note"></span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="checker" aria-hidden="true"></div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 id="contact-title" class="section-title" data-i18n="contact.title">Drop us a line</h2>
+          <p class="lede" data-i18n="contact.text">Big order, event or a question? Send us a message and we'll get back to you.</p>
+        </div>
+
+        <form id="contact-form" class="form" novalidate>
+          <div class="field">
+            <label for="f-name" data-i18n="form.name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-error">
+            <p class="field-error" id="f-name-error" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-email" data-i18n="form.email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-error">
+            <p class="field-error" id="f-email-error" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-message" data-i18n="form.message">Message</label>
+            <textarea id="f-message" name="message" rows="5" required aria-describedby="f-message-error"></textarea>
+            <p class="field-error" id="f-message-error" hidden></p>
+          </div>
+          <div class="hp" aria-hidden="true">
+            <label for="f-company">Company</label>
+            <input id="f-company" name="company" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="btn" type="submit" data-i18n="form.send">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-privacy muted"><span data-i18n="form.privacy">We only use your info to reply to you.</span> <a href="privacy.html" data-i18n="form.privacyLink">Privacy notice</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <img class="footer-logo" src="img/logo-360.jpg" width="360" height="303" alt="A Tope Burguer" data-i18n-attr="alt:logo.alt" loading="lazy" decoding="async">
+      <ul class="social" data-social data-social-wrap hidden aria-label="Social media" data-i18n-attr="aria-label:social.label"></ul>
+      <ul class="footer-links">
+        <li><a href="privacy.html" data-i18n="footer.privacy">Privacy</a></li>
+        <li><a href="privacy.html#accessibility" data-i18n="footer.accessibility">Accessibility</a></li>
+      </ul>
+      <p class="muted">© <span data-year>2026</span> A Tope Burguer. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
